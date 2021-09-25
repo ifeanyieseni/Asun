@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.15;  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+nav{
+background: #f2f2f2;
+box-shadow: 0 4px 4px rgba(0,0,0,.1);
+position: fixed;
+}
+
+.nav-item{
+  margin-right: 20px;
+}
+
+.nav-link{
+  color: #f29422;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  /* border-bottom:1px solid #f28627; */
+  color: #e4d01c;
+}
+.navbar-brand{
+  width: 60px;
+  max-width: 100%;
+}
+.navbar-toggler{
+  color: #f2cf63 !important;
+  font-size: 1.5rem;
+}
+
+/* Showcase */
+#carouselExampleCaptions{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.carousel-inner{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  /* background: #101d2c; */
+}
+
+#carouselExampleCaptions .carousel-inner .carousel-item{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
+   url(../img/asun12.jpg);
+  background-size: cover;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2){
+  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
+   url(../img/asun-recipe-spicy-roasted-goat-meat-1062x598.jpg);
+  background-size: cover;
+}
+#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3){
+  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
+   url(../img/img2.jpg);
+  background-size: cover;
+}
+
+
+
+.carousel-caption{
+  position: absolute;
+  top: 40%;
+}
+.carousel-caption h1{
+  font-family: 'Lato', sans-serif;
+  color: #f29422;
+  font-size: 56px;
+}
+
+.carousel-caption p{
+  line-height: 24px;
+  text-transform: capitalize;
+
+}
+
+
+/* About */
+/* .about{
+  height: 100vh;
+  width: 100%;
+} */
+
+.about-content{
+  background:linear-gradient(rgba(43, 42, 42, 0.493), rgba(19, 18, 16, 0.822)),  url(../img/img1_photos_v2_x2_light_ai.jpg) center no-repeat;
+  height: 80vh;
+  /* background-attachment: fixed; */
+}
+
+.about-content h2{
+  color: #f29422;
+  font-family: 'Lato', sans-serif;
+  font-size: 56px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-content h5,p{
+  color: #f2f2f2;
+  font-size: 27px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+}
+
+.about-img {
+box-shadow: 0px 0px 0px 13px #e4d01c;
+}
+
+.gallery{
+  background-color: #f29422;
+}
+
+
+/* Form  */
+.form-wrapper input:focus{
+  box-shadow: none !important;
+}
+
+/* Contact */
+.contact-info span,
+.contact-info a{
+  font-size: 20px;
+  color:#030302 ;
+}
+
+
+
+.contact-details .fa-map-marker,
+.contact-details .fa-phone,
+.contact-details .fa-envelope-open {
+  font-size: 23px;
+  color: #f29422;
+  margin-right: 10px;
+}
+
+
+.follow ul li{
+  background: #f29422;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 10px;
+}
+
+
+.follow ul li .fa-facebook, .fa-instagram, .fa-twitter{
+  color: #f2f2f2;
+  font-size: 18px !important;
+}
+/* Footer  */
+.footer{
+background: #f2f2f2;
+}
+
+.copyright h5{
+  color: #f29422;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+ @media (max-width:768px){
+  .copyright h5{
+    font-size: 19px;
+    /* width: 80%; */
+  }
+} 
+
+
+
