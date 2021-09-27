@@ -100,25 +100,7 @@ position: fixed;
 
 
 /* About */
-/* .about{
-  height: 100vh;
-  width: 100%;
-} */
 
-.about-content{
-  background:linear-gradient(rgba(43, 42, 42, 0.493), rgba(19, 18, 16, 0.822)),  url(../img/img1_photos_v2_x2_light_ai.jpg) center no-repeat;
-  height: 80vh;
-  /* background-attachment: fixed; */
-}
-
-.about-content h2{
-  color: #f29422;
-  font-family: 'Lato', sans-serif;
-  font-size: 46px;
-  letter-spacing: 3px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
 
 .about-content h5,p{
   color: #f2f2f2;
@@ -127,12 +109,26 @@ position: fixed;
   font-weight: 300;
 }
 
-.about-img {
-box-shadow: 0px 0px 0px 13px #e4d01c;
+.about-desc h2,
+.g-text h2{
+  color: #f29422;
+  font-family: 'Lato', sans-serif;
+  font-size: 46px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
+.about-desc p,
+.mission p{
+  color: #030302 !important;
+  font-size: 19px;
+}
+
+
+
 .gallery{
-  background-color: #f29422;
+  background-color: #e9e4de;
 }
 
 
@@ -151,7 +147,7 @@ box-shadow: 0px 0px 0px 13px #e4d01c;
 
 
 .contact-details .fa-map-marker,
-.contact-details .fa-phone,
+.contact-details .fa-phone-alt,
 .contact-details .fa-envelope-open {
   font-size: 23px;
   color: #f29422;
@@ -159,24 +155,22 @@ box-shadow: 0px 0px 0px 13px #e4d01c;
 }
 
 
-.follow ul li{
+.follow ul a{
   background: #f29422;
-  width: 50px;
+  width: 100px;
   height: 50px;
-  border-radius: 50%;
   margin: 10px 10px;
 }
 
-.about-desc p{
-  color: #030302 !important;
-  font-size: 19px;
-}
-
-
-.follow ul li .fa-facebook, .fa-instagram, .fa-twitter{
+.follow ul a .fa-instagram{
   color: #f2f2f2;
-  font-size: 18px !important;
+  font-size: 28px !important;
 }
+
+
+
+
+
 /* Footer  */
 .footer{
 background: #f2f2f2;
@@ -184,7 +178,7 @@ background: #f2f2f2;
 
 .copyright h5{
   color: #f29422;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -194,14 +188,18 @@ background: #f2f2f2;
     /* width: 80%; */
   }
   .carousel-caption h1,
-  .about-content h2{
+  .about-desc h2{
     font-size: 33px !important;
   }
   
-  .carousel-caption p,
-  .about-content h5,p{
+  .carousel-caption p{
     font-size: 20px !important;
   
+  }
+
+
+  .about-desc p{
+    font-size: 16px;
   }
 } 
 
