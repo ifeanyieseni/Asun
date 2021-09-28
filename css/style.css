@@ -98,8 +98,8 @@ position: fixed;
 
 }
 
-.carousel-caption .btn-default,
-input[type="submit"]{
+.btn-default
+{
   background: #f29422;
   color: #f2f2f2;
   padding: 12px 40px;
@@ -108,8 +108,8 @@ input[type="submit"]{
   font-weight: 500;
 }
 
-.carousel-caption .btn-default:hover,
-input[type="submit"]:hover{
+
+.btn-default:hover{
   background: #e4d01c !important;
   color: #f2f2f2 !important;
 }
