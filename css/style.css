@@ -11,98 +11,21 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  background: #f2f2f2;
+}
 
 a{
   text-decoration: none;
 }
 
 
-nav{
-background: #f2f2f2;
-box-shadow: 0 4px 4px rgba(0,0,0,.1);
-position: fixed;
-}
+/* Buttons */
 
-.nav-item{
-  margin-right: 20px;
-}
-
-.nav-link{
-  color: #f29422;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.nav-link:hover{
-  /* border-bottom:1px solid #f28627; */
-  color: #e4d01c;
-}
-.navbar-brand{
-  width: 60px;
-  max-width: 100%;
-}
-.navbar-toggler{
-  color: #f2cf63 !important;
-  font-size: 1.5rem;
-}
-
-/* Showcase */
-#carouselExampleCaptions{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
-
-.carousel-inner{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  /* background: #101d2c; */
-}
-
-#carouselExampleCaptions .carousel-inner .carousel-item{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/asun12.jpg);
-  background-size: cover;
-}
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/asun-recipe-spicy-roasted-goat-meat-1062x598.jpg);
-  background-size: cover;
-}
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/img2.jpg);
-  background-size: cover;
-}
-
-
-
-.carousel-caption{
-  position: absolute;
-  top: 40%;
-}
-.carousel-caption h1{
-  font-family: 'Lato', sans-serif;
-  color: #f29422;
-  font-size: 56px;
-}
-
-.carousel-caption p{
-  line-height: 24px;
-  text-transform: capitalize;
-
-}
-
-.btn-default
-{
+.btn-default{
   background: #f29422;
   color: #f2f2f2;
-  padding: 12px 40px;
+  padding: 8px 50px;
   text-transform: capitalize;
   font-size: 19px;
   font-weight: 500;
@@ -113,13 +36,70 @@ position: fixed;
   background: #e4d01c !important;
   color: #f2f2f2 !important;
 }
-.carousel-caption .btn-default:focus{
-  box-shadow: none;
+
+/* Navbar  */
+
+nav{
+background: #f2f2f2;
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.109);
+position: fixed;
+}
+
+.nav-item{
+  margin-right: 20px;
+}
+
+.nav-link{
+  color: #f29422;
+  text-transform: uppercase;
+  font-size: 0.93rem;
+  font-weight: 500;
+}
+
+.nav-link:hover{
+  /* border-bottom:1px solid #f28627; */
+  color: #e4d01c;
+}
+.navbar-brand{
+  width: 50px;
+  max-width: 100%;
+}
+.navbar-toggler{
+  color: #f2cf63 !important;
+  font-size: 1.5rem;
+}
+
+/* Showcase */
+
+
+.showcase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
+   url(../img/asun12.jpg);
+  background-size: cover;
 }
 
 
 
+.showcase-text h1{
+  font-family: 'Lato', sans-serif;
+  color: #f29422;
+  font-size: 3.5rem;
+}
 
+.showcase-text p{
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.showcase-text .btn-default {
+  border-radius: 40px;
+  padding: 10px 40px !important;
+}
 
 
 /* About */
@@ -207,7 +187,7 @@ background: #f2f2f2;
 
 .copyright h5{
   color: #f29422;
-  font-size: 18px;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
@@ -215,16 +195,15 @@ background: #f2f2f2;
 /* Media Queries */
  @media (max-width:768px){
   .copyright h5{
-    font-size: 19px;
-    /* width: 80%; */
+    font-size: 1rem;
   }
-  .carousel-caption h1,
+  .showcase-text h1,
   .about-desc h2{
-    font-size: 33px !important;
+    font-size: 2.25rem !important;
   }
   
-  .carousel-caption p{
-    font-size: 16px !important;
+  .showcase-text p{
+    font-size: 1.15rem !important;
   
   }
 
