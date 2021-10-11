@@ -11,15 +11,37 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  background: #f2f2f2;
+}
 
 a{
   text-decoration: none;
 }
 
 
+/* Buttons */
+
+.btn-default{
+  background: #f29422;
+  color: #f2f2f2;
+  padding: 8px 50px;
+  text-transform: capitalize;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+
+.btn-default:hover{
+  background: #e4d01c !important;
+  color: #f2f2f2 !important;
+}
+
+/* Navbar  */
+
 nav{
 background: #f2f2f2;
-box-shadow: 0 4px 4px rgba(0,0,0,.1);
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.109);
 position: fixed;
 }
 
@@ -30,7 +52,7 @@ position: fixed;
 .nav-link{
   color: #f29422;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.93rem;
   font-weight: 500;
 }
 
@@ -39,7 +61,7 @@ position: fixed;
   color: #e4d01c;
 }
 .navbar-brand{
-  width: 60px;
+  width: 50px;
   max-width: 100%;
 }
 .navbar-toggler{
@@ -48,95 +70,78 @@ position: fixed;
 }
 
 /* Showcase */
-#carouselExampleCaptions{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
 
-.carousel-inner{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  /* background: #101d2c; */
-}
 
-#carouselExampleCaptions .carousel-inner .carousel-item{
-  position: relative;
-  height: 100%;
+.showcase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
   width: 100%;
   background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
    url(../img/asun12.jpg);
   background-size: cover;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/asun-recipe-spicy-roasted-goat-meat-1062x598.jpg);
-  background-size: cover;
-}
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/img2.jpg);
-  background-size: cover;
-}
 
 
 
-.carousel-caption{
-  position: absolute;
-  top: 40%;
-}
-.carousel-caption h1{
+.showcase-text h1{
   font-family: 'Lato', sans-serif;
   color: #f29422;
-  font-size: 56px;
+  font-size: 3.5rem;
 }
 
-.carousel-caption p{
+.showcase-text p{
   line-height: 24px;
   text-transform: capitalize;
+}
 
+.showcase-text .btn-default {
+  border-radius: 40px;
+  padding: 10px 40px !important;
 }
 
 
 /* About */
-/* .about{
-  height: 100vh;
-  width: 100%;
-} */
 
-.about-content{
-  background:linear-gradient(rgba(43, 42, 42, 0.493), rgba(19, 18, 16, 0.822)),  url(../img/img1_photos_v2_x2_light_ai.jpg) center no-repeat;
-  height: 80vh;
-  /* background-attachment: fixed; */
+
+.about-content h5,p{
+  color: #f2f2f2;
+  font-size: 23px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
 }
 
-.about-content h2{
+.about-desc h2,
+.g-text h2{
   color: #f29422;
   font-family: 'Lato', sans-serif;
-  font-size: 56px;
+  font-size: 46px;
   letter-spacing: 3px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.about-content h5,p{
-  color: #f2f2f2;
-  font-size: 27px;
-  letter-spacing: 1.2px;
-  font-weight: 300;
+.about-desc p,
+.mission p{
+  color: #030302 !important;
+  font-size: 19px;
 }
 
-.about-img {
-box-shadow: 0px 0px 0px 13px #e4d01c;
-}
+
 
 .gallery{
-  background-color: #f29422;
+  background-color: #e9e4de;
 }
 
 
 /* Form  */
+
+
+.order-content{
+  height: 40vh;
+}
+ 
 .form-wrapper input:focus{
   box-shadow: none !important;
 }
@@ -151,7 +156,7 @@ box-shadow: 0px 0px 0px 13px #e4d01c;
 
 
 .contact-details .fa-map-marker,
-.contact-details .fa-phone,
+.contact-details .fa-phone-alt,
 .contact-details .fa-envelope-open {
   font-size: 23px;
   color: #f29422;
@@ -159,19 +164,22 @@ box-shadow: 0px 0px 0px 13px #e4d01c;
 }
 
 
-.follow ul li{
+.follow ul a{
   background: #f29422;
-  width: 50px;
+  width: 100px;
   height: 50px;
-  border-radius: 50%;
   margin: 10px 10px;
 }
 
-
-.follow ul li .fa-facebook, .fa-instagram, .fa-twitter{
+.follow ul a .fa-instagram{
   color: #f2f2f2;
-  font-size: 18px !important;
+  font-size: 28px !important;
 }
+
+
+
+
+
 /* Footer  */
 .footer{
 background: #f2f2f2;
@@ -179,14 +187,33 @@ background: #f2f2f2;
 
 .copyright h5{
   color: #f29422;
-  font-size: 23px;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 
+
+/* Media Queries */
  @media (max-width:768px){
   .copyright h5{
-    font-size: 19px;
-    /* width: 80%; */
+    font-size: 1rem;
+  }
+  .showcase-text h1,
+  .about-desc h2{
+    font-size: 2.25rem !important;
+  }
+  
+  .showcase-text p{
+    font-size: 1.15rem !important;
+  
+  }
+
+
+  .about-desc p{
+    font-size: 16px;
+  }
+
+  .order-content{
+    flex-direction: column;
   }
 } 
 

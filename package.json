@@ -1,7 +1,6 @@
 {
   "name": "Asun",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
@@ -12,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^3.2.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifeanyieseni/Asun.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ifeanyieseni/Asun/issues"
+  },
+  "description": ""
 }
