@@ -12,7 +12,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  background: #f2f2f2;
+  color: #f5f5f5a6;
 }
 
 a{
@@ -23,8 +23,8 @@ a{
 /* Buttons */
 
 .btn-default{
-  background: #e4d01c ;
-  color: #f2f2f2;
+  background: #f2f2f2;
+  color: #f29422;
   padding: 8px 30px;
   text-transform: capitalize;
   font-size: 19px;
@@ -33,8 +33,7 @@ a{
 
 
 .btn-default:hover{
-  background:#f29422 !important;
-  color: #f2f2f2 !important;
+  color:#f29422 !important;
 }
 
 /* Navbar  */
@@ -185,39 +184,39 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
 /* Contact */
 
 .contact{
-  background-color:#f29422;
+  background: linear-gradient(to top right, #F29422 50%,#F28627 50%);
+  width: 100%;
   height: 75vh;
 }
 .contact-info span,
 .contact-info a{
-  font-size: 20px;
+  font-size: 1.25rem;
   color:#030302 ;
 }
 
 
 .contact-details{
-  width: 80%;
-  display: flex;
-  align-items: center;
   padding: 0.5rem;
 }
 
-.contact-details .fa-map-marker,
-.contact-details .fa-phone-alt,
-.contact-details .fa-envelope-open {
-  font-size: 23px;
+.contact-details h4,
+.follow h4{
+  font-size: 1.25rem;
+}
+
+.contact-details a{
   color: #f2f2f2;
 }
 
 
 .follow ul a{
-  background: #f09433; 
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  width: 90px;
-  height: 50px;
-  margin: 10px 10px;
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  font-size: 0.638rem;
 }
 
 .follow ul a .fa-instagram{
@@ -244,7 +243,8 @@ background: #f2f2f2;
 /* Media Queries */
  @media (max-width:768px){
    .showcase-text{
-     width: 350px;
+     width: 300px;
+     z-index: 1;
    }
   .showcase-text h1{
     font-size: 1.5rem;
@@ -273,8 +273,13 @@ background: #f2f2f2;
   height: 100vh;
 }
 
+.contact-desc {
+  text-align: center;
+}
 
-
+.follow ul{
+  justify-content: center;
+}
   .copyright h5{
     font-size: 1rem;
   }
@@ -285,7 +290,13 @@ background: #f2f2f2;
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon{
-    display: none;;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    margin: 0 30px;
+    background-color: #030302 !important;
+    padding: 1rem;
+    z-index: 100;
   }
 } 
 
