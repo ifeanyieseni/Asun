@@ -151,8 +151,8 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
   font-size: 1.25rem;
 }
 
-.gallery,
-.order{
+.gallery
+{
   height: 80vh;
   width: 100%;
   background: linear-gradient(to left, #e9c8c8,#F29422);
@@ -169,7 +169,11 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
 
 /* Form  */
 
-
+.order{
+  background-color: #F28627;
+  padding: 1rem;
+  height: 80vh;
+}
 .order-content{
   height: 40vh;
 }
@@ -182,7 +186,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
 
 .contact{
   background-color:#f29422;
-  height: 80vh;
+  height: 75vh;
 }
 .contact-info span,
 .contact-info a{
