@@ -80,10 +80,14 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
   position: relative;
   height: 80vh;
   width: 100%;
+  
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item{
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   background:url(../img/img1.png);
@@ -109,14 +113,6 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
   border-radius: 100%;
 }
 
-.showcase-text{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.411);
-  padding: 1rem;
-}
 
 .showcase-text h1{
   color: #f2f2f2;
