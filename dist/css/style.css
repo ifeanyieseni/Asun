@@ -41,7 +41,7 @@ a{
 
 nav{
 background: #f2f2f2;
-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
 }
 
 .nav-item{
@@ -128,37 +128,43 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
 .showcase-text p{
   font-size: 	1.25rem;
   text-transform: capitalize ;
+  color: #f2f2f2;
 }
 
 
 
 
 /* About */
-.about-content h5,p{
-  color: #f2f2f2;
-  font-weight: 300;
+.about{
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(to top right, #F29422 50%,#F28627 50%);
 }
 
 .about-desc h2,
+.mission h3{
+  font-size: 2.5rem;
+}
+
+.about-desc p, 
+.mission p{
+  font-size: 1.25rem;
+}
+
+.gallery,
+.order{
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(to left, #e9c8c8,#F29422);
+}
+
+
+
 .g-text h2{
-  color: #f29422;
   font-family: 'Lato', sans-serif;
   font-size: 46px;
-  letter-spacing: 3px;
-  font-weight: 300;
 }
 
-.about-desc p,
-.mission p{
-  color: #030302 !important;
-  font-size: 19px;
-}
-
-
-
-.gallery{
-  background-color: #e9e4de;
-}
 
 
 /* Form  */
@@ -173,6 +179,11 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
 }
 
 /* Contact */
+
+.contact{
+  background-color:#f29422;
+  height: 80vh;
+}
 .contact-info span,
 .contact-info a{
   font-size: 20px;
@@ -180,18 +191,27 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
 }
 
 
+.contact-details{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
 
 .contact-details .fa-map-marker,
 .contact-details .fa-phone-alt,
 .contact-details .fa-envelope-open {
   font-size: 23px;
-  color: #f29422;
+  color: #f2f2f2;
   margin-right: 10px;
 }
 
 
 .follow ul a{
-  background: #f29422;
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   width: 100px;
   height: 50px;
   margin: 10px 10px;
@@ -199,7 +219,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
 
 .follow ul a .fa-instagram{
   color: #f2f2f2;
-  font-size: 28px !important;
+  font-size: 30px !important;
 }
 
 
@@ -230,12 +250,35 @@ background: #f2f2f2;
   .showcase-text p{
     font-size:0.938rem;
   }
+
+
+  .about-desc p, 
+.mission p{
+  font-size: 1rem;
+}
+
+.item{
+  margin-bottom: 15px;
+  text-align: center;
+}
+.item img{
+  width: 200px;
+}
+
+.gallery{
+  height: 100vh;
+}
   .copyright h5{
     font-size: 1rem;
   }
 
   .order-content{
     flex-direction: column;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
+    display: none;;
   }
 } 
 
