@@ -151,8 +151,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
   font-size: 1.25rem;
 }
 
-.gallery
-{
+.gallery{
   text-align: center;
   height: 80vh;
   width: 100%;
@@ -200,7 +199,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
   width: 80%;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .contact-details .fa-map-marker,
@@ -208,7 +207,6 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
 .contact-details .fa-envelope-open {
   font-size: 23px;
   color: #f2f2f2;
-  margin-right: 10px;
 }
 
 
@@ -217,7 +215,7 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.01);
   background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  width: 100px;
+  width: 90px;
   height: 50px;
   margin: 10px 10px;
 }
@@ -270,9 +268,13 @@ background: #f2f2f2;
   width: 200px;
 }
 
-.gallery{
+.gallery,
+.contact{
   height: 100vh;
 }
+
+
+
   .copyright h5{
     font-size: 1rem;
   }
