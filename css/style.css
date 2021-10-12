@@ -23,7 +23,7 @@ a{
 /* Buttons */
 
 .btn-default{
-  background: #f29422;
+  background: #e4d01c ;
   color: #f2f2f2;
   padding: 8px 30px;
   text-transform: capitalize;
@@ -33,7 +33,7 @@ a{
 
 
 .btn-default:hover{
-  background: #e4d01c !important;
+  background:#f29422 !important;
   color: #f2f2f2 !important;
 }
 
@@ -41,7 +41,7 @@ a{
 
 nav{
 background: #f2f2f2;
-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.109);
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.329);
 }
 
 .nav-item{
@@ -69,11 +69,11 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.109);
 }
 
 /* Showcase */
-/* Showcase */
 #carouselExampleIndicators{
   position: relative;
   height: 80vh;
   width: 100%;
+ 
 }
 
 .carousel-inner{
@@ -90,26 +90,52 @@ box-shadow: 0 4px 4px rgba(0, 0, 0, 0.109);
   background-size: cover;
   background-position: center;
 }
-/* #carouselExampleCaptions .carousel-inner .carousel-item:nth-child(2){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/asun6.jpg);
+
+
+#carouselExampleIndicators  .carousel-inner .carousel-item:nth-child(2){
+  background:url(../img/img2.png);
   background-size: cover;
+  background-position: center;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item:nth-child(3){
-  background: linear-gradient(rgba(16,29,44,.65),rgba(16,29,44,.75)),
-   url(../img/asun3.jpg);
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+  background:url(../img/img3.png);
   background-size: cover;
-} */
+  background-position: center;
+} 
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.showcase-text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.411);
+  padding: 1rem;
+}
+
+.showcase-text h1{
+  color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.showcase-text p{
+  font-size: 	1.25rem;
+  text-transform: capitalize ;
+}
 
 
 
 
 /* About */
-
-
 .about-content h5,p{
   color: #f2f2f2;
-  letter-spacing: 1.2px;
   font-weight: 300;
 }
 
@@ -194,6 +220,16 @@ background: #f2f2f2;
 
 /* Media Queries */
  @media (max-width:768px){
+   .showcase-text{
+     width: 350px;
+   }
+  .showcase-text h1{
+    font-size: 1.5rem;
+  }
+  
+  .showcase-text p{
+    font-size:0.938rem;
+  }
   .copyright h5{
     font-size: 1rem;
   }
